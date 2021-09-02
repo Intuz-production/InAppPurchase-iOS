@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="In_App_PurchaseDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="izJ-ka-rS7">
+                                <rect key="frame" x="147" y="428" width="120" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="udm-DR-12o"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="SUBSCRIPTION"/>
+                                <connections>
+                                    <action selector="clickSubscription:" destination="BYZ-38-t0r" eventType="touchUpInside" id="w9Q-YZ-3eZ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BVw-4L-idJ">
+                                <rect key="frame" x="170" y="488" width="74" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="5p3-9t-s0t"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="RESTORE"/>
+                                <connections>
+                                    <action selector="clickRestore:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wZb-Qw-CjF"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="izJ-ka-rS7" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="CHJ-P3-Mjo"/>
+                            <constraint firstItem="izJ-ka-rS7" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="cae-4h-UBY"/>
+                            <constraint firstItem="BVw-4L-idJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="n8K-1d-7Gk"/>
+                            <constraint firstItem="BVw-4L-idJ" firstAttribute="top" secondItem="izJ-ka-rS7" secondAttribute="bottom" constant="20" id="ti5-AV-UPH"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="btnRestore" destination="BVw-4L-idJ" id="dZ5-ui-fIW"/>
+                        <outlet property="btnSubscription" destination="izJ-ka-rS7" id="4l6-L4-Wge"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-342" y="34"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
